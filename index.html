@@ -3,188 +3,157 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>LIS 500 — Project 2 (Code & Power)</title>
+    <title>LIS 500: Code & Power — Project 2</title>
     <meta
       name="description"
-      content="LIS 500 Project 2: a high-level discussion of code, power, and intersectionality."
+      content="LIS 500 Project 2: Code & Power — exploring the socio-technical dimensions of our digital world."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- #comments# Project 2: keep teammate names visible on the page for credit -->
     <a class="skip" href="#main">Skip to content</a>
 
+    <!-- Top header + nav (matches your peers’ simple layout) -->
     <header class="site-header">
-      <div class="container header-grid">
-        <div>
-          <p class="eyebrow">LIS 500 • Project 2</p>
-          <h1 class="title">Code & Power</h1>
-          <p class="subtitle">
-            A discussion-driven site about how technology distributes power—and how intersectionality
-            changes what we notice, measure, and design.
-          </p>
-        </div>
+      <div class="wrap">
+        <h1 class="site-title">LIS 500: Code and Power</h1>
+        <p class="site-subtitle">Exploring the Socio-Technical Dimensions of Our Digital World</p>
 
-        <section class="card">
-          <h2 class="card-title">Team</h2>
-          <ul class="list">
-            <li><strong>Fairoz Khan</strong></li>
-            <li>Teammate Name 2</li>
-            <li>Teammate Name 3</li>
-          </ul>
-          <p class="tiny">
-            <!-- #comments# Update these names everywhere the assignment requires -->
-            Replace teammate placeholders before submitting.
-          </p>
-        </section>
+        <nav class="nav">
+          <a href="#welcome">Welcome</a>
+          <span class="sep">|</span>
+          <a href="#about">About Us</a>
+          <span class="sep">|</span>
+          <a href="#hero">Tech Hero</a>
+          <span class="sep">|</span>
+          <a href="#resources">Resource Guide</a>
+        </nav>
       </div>
     </header>
 
-    <nav class="site-nav">
-      <div class="container nav-row">
-        <a href="#focus">Focus</a>
-        <a href="#person">Not-a-CEO Person</a>
-        <a href="#materials">Course Materials</a>
-        <a href="#sources">Sources</a>
-        <a href="#peer">Peer Comments</a>
-      </div>
-    </nav>
-
-    <main id="main" class="container">
-      <section id="focus" class="section">
-        <h2>Focus</h2>
-        <div class="grid-2">
-          <article class="card">
-            <h3 class="card-title">Claim</h3>
-            <p>
-              <!-- #comments# Keep this high-level and “discussion” style: your reasoning + implications -->
-              Power shows up in system defaults: what gets ranked, flagged, funded, surveilled, or ignored.
-              “Neutral” choices often have non-neutral outcomes.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3 class="card-title">So what?</h3>
-            <p>
-              Intersectionality changes the analysis: it asks who bears the costs of “efficiency,” who is
-              made legible to institutions, and who gets meaningful recourse when systems fail.
-            </p>
-          </article>
+    <main id="main" class="wrap">
+      <!-- Banner (keeps the “big image” feel without needing a real image yet) -->
+      <section class="banner" aria-label="Course banner">
+        <div class="banner-inner">
+          <div class="banner-badge">LIS 500</div>
+          <div class="banner-text">
+            <div class="banner-head">CODE &amp; POWER</div>
+            <div class="banner-sub">Technology, equity, and critical perspectives</div>
+          </div>
         </div>
       </section>
 
-      <section id="person" class="section">
-        <h2>Person (Not a CEO like…)</h2>
+      <!-- WELCOME -->
+      <section id="welcome" class="card">
+        <h2>Welcome</h2>
+        <p>
+          This website is part of <strong>LIS 500: Code and Power</strong> at UW–Madison. Our goal is to
+          think critically about how technology intersects with race, identity, labor, and power — and
+          how “neutral” systems can still produce unequal outcomes.
+        </p>
+        <p>
+          Throughout this site, we connect course concepts (like intersectionality, bias, and visibility)
+          to real examples from tech and digital culture.
+        </p>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="card">
+        <h2>About Us</h2>
+
+        <!-- #comments# Project 2: keep teammate names visible on the page for credit -->
         <p class="muted">
-          <!-- #comments# Prompt warning: don’t pick a big tech CEO. Pick someone tied to intersectionality + adversity -->
-          Choose someone who overcame adversity and made a meaningful contribution to issues of intersectionality.
+          Created by:
+          <strong>Fairoz Khan</strong>,
+          <strong>Teammate Name 2</strong>,
+          <strong>Teammate Name 3</strong>
+          <span class="nowrap">| UW–Madison</span>
         </p>
 
-        <div class="card">
-          <h3 class="card-title">Who I’m discussing</h3>
-          <p><strong>[Name]</strong> — [Role / field / community]</p>
-          <p>
-            [2–4 sentences: background + adversity + what they did. Keep it thoughtful, not a biography dump.]
-          </p>
+        <p>
+          We’re focusing on how power shows up in everyday tech decisions — who gets represented, who
+          gets ignored, and who takes the risk when systems fail. We’re also paying attention to how
+          “diversity” is sometimes framed in a way that still leaves people out.
+        </p>
 
-          <h4 class="minihead">Why their work connects to Code & Power</h4>
-          <ul class="list">
-            <li>[Example: changed who gets access / representation / safety]</li>
-            <li>[Example: challenged institutions / policy / platform governance]</li>
-            <li>[Example: measurable impact + remaining limits]</li>
-          </ul>
+        <div class="mini-grid">
+          <div class="mini">
+            <h3>What we’re analyzing</h3>
+            <p>
+              How platforms and institutions make people “legible” through data, categories, and
+              assumptions — and what happens when those assumptions don’t fit real lives.
+            </p>
+          </div>
+          <div class="mini">
+            <h3>Why intersectionality matters</h3>
+            <p>
+              It pushes us to look at overlapping identities (race, gender, class, etc.) instead of
+              treating inequality like a one-variable problem.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="materials" class="section">
-        <h2>Connection to Course Materials</h2>
-        <div class="grid-3">
-          <article class="card">
-            <h3 class="card-title">Idea 1</h3>
-            <p>
-              [Name a course concept + explain it in your own words + one concrete example.]
-            </p>
-          </article>
+      <!-- TECH HERO -->
+      <section id="hero" class="card">
+        <h2>Tech Hero</h2>
+        <p class="muted">
+          <!-- #comments# Prompt warning: do NOT pick a big tech CEO. Choose someone tied to intersectionality + meaningful contribution -->
+          Not a CEO — someone who overcame adversity and made a meaningful contribution tied to equity and intersectionality.
+        </p>
 
-          <article class="card">
-            <h3 class="card-title">Idea 2</h3>
-            <p>
-              [Another concept + connect it to your person/topic + why it matters.]
-            </p>
-          </article>
+        <h3 class="tight">Who we chose</h3>
+        <p>
+          <strong>[Name]</strong> — [Role / field]. [2–3 sentences on what they faced + what they built/changed + why it matters.]
+        </p>
 
-          <article class="card">
-            <h3 class="card-title">Idea 3</h3>
-            <p>
-              [A tension/critique: what the material doesn’t solve; where power hides.]
-            </p>
-          </article>
-        </div>
+        <h3 class="tight">Why they connect to “Code &amp; Power”</h3>
+        <ul>
+          <li>[Example: expanded access / challenged bias / made harms visible]</li>
+          <li>[Example: changed policy, platform norms, or community resources]</li>
+          <li>[Example: connects to course themes like labor, visibility, categorization, bias]</li>
+        </ul>
+      </section>
+
+      <!-- RESOURCE GUIDE -->
+      <section id="resources" class="card">
+        <h2>Resource Guide</h2>
+        <p>
+          This section collects materials related to our topic (course concepts + outside sources).
+          We’re aiming for sources that support claims, add context, or offer a critique — not just filler links.
+        </p>
+
+        <ul class="links">
+          <li>
+            <a href="#" target="_blank" rel="noreferrer">[Course reading / lecture concept]</a>
+            <span class="hint">— 1 sentence on what it adds.</span>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noreferrer">[Credible article / report]</a>
+            <span class="hint">— what it supports + why it’s trustworthy.</span>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noreferrer">[Example case / news story]</a>
+            <span class="hint">— how it shows power in action.</span>
+          </li>
+        </ul>
 
         <p class="tiny">
-          <!-- #comments# This section should read like YOUR discussion, not a summary of others -->
-          Tip: use one real-world example (news, policy, platform change) to anchor your argument.
+          <!-- #comments# Replace # with real links and keep the “1-sentence why it matters” style -->
+          Tip: keep this short + specific. One strong link with a clear reason beats five random links.
         </p>
       </section>
 
-      <section id="sources" class="section">
-        <h2>Sources (with short annotations)</h2>
-        <div class="card">
-          <ul class="sources">
-            <li>
-              <a href="#" target="_blank" rel="noreferrer">[Source 1 title]</a>
-              <span class="muted">— Why it’s credible + how you used it.</span>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noreferrer">[Source 2 title]</a>
-              <span class="muted">— What claim it supports + what it leaves out.</span>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noreferrer">[Source 3 title]</a>
-              <span class="muted">— Any key stat/quote (paraphrase) + relevance.</span>
-            </li>
-          </ul>
-
-          <p class="tiny">
-            <!-- #comments# Replace # with real links; keep annotations short but specific -->
-            Use sources that strengthen your argument (not filler links).
-          </p>
-        </div>
-      </section>
-
-      <section id="peer" class="section">
-        <h2>Peer Comments (what “substantial” looks like)</h2>
-        <div class="grid-2">
-          <div class="card">
-            <h3 class="card-title">Comment checklist</h3>
-            <ul class="list">
-              <li>Reference a specific claim they made and respond to it</li>
-              <li>Add one new example, link, or counterpoint</li>
-              <li>Suggest one concrete improvement (argument OR HTML/CSS)</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Copy/paste template</h3>
-            <p class="quote">
-              “Your point about ___ is strong because ___. One place I’d push further is ___ (because ___).
-              A source/example that could strengthen this is ___. Also, consider changing ___ on your page to improve ___.”
-            </p>
-          </div>
-        </div>
-      </section>
+      <footer class="footer">
+        <p class="tiny">
+          © <span id="year"></span> LIS 500 — Project 2 • Built with HTML + CSS (no templates)
+        </p>
+      </footer>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <p>© <span id="year"></span> LIS 500 — Project 2</p>
-        <p class="tiny">Built with HTML + CSS (no templates).</p>
-      </div>
-    </footer>
-
     <script>
-      // #comments# Tiny JS for the year only (keeps the site fresh without “template dependence”)
+      // #comments# Tiny JS for the year only
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
