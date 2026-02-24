@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tech Hero — LIS 500 Project 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- #comments# Skip link supports keyboard users -->
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <h1 class="site-title">Tech Hero</h1>
+        <p class="site-subtitle">Someone challenging norms and widening access in tech.</p>
+
+        <!-- #comments# Shared navigation across all pages -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Welcome</a>
+          <a href="about.html">About Me</a>
+          <a href="ib-resources.html">Implicit Bias Resources</a>
+          <a href="tech-hero.html" aria-current="page">Tech Hero</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card">
+        <!-- #comments# Not a famous Big Tech CEO; focuses on access + equity via education -->
+        <h2>Zach Wilson</h2>
+
+        <p class="muted">
+          <!-- #comments# Keep profile ~500 words max + include links -->
+          Founder of DataExpert.io • data engineering education • making high-signal learning more accessible
+        </p>
+
+        <!-- #comments# Short profile written in discussion style (not a pure biography) -->
+        <p>
+          I picked Zach Wilson because a lot of “breaking into tech” advice feels gatekept — like you need the right school,
+          the right network, and a ton of money for courses before you can even start. Zach’s work stands out because he’s built
+          a pathway that lowers the barrier to entry, especially for people who don’t already have access to strong mentorship.
+          On his DataExpert.io “About” page, he frames his goal as upskilling data knowledge workers based on his experience leading
+          data/software engineering teams at companies like Airbnb, Facebook, and Netflix. :contentReference[oaicite:1]{index=1}
+        </p>
+
+        <p>
+          What makes this a “Code &amp; Power” story is that access is a power issue. If the only people who can learn practical data
+          engineering are people with time, money, and connections, then the field stays less diverse (and the systems we build reflect
+          a narrower range of experiences). DataExpert.io runs cohort-style bootcamps and also pushes a lot of learning content publicly
+          through “Data with Zach” on YouTube, including free bootcamp lecture material. :contentReference[oaicite:2]{index=2}
+        </p>
+
+        <p>
+          He also runs a large newsletter focused on data engineering and AI trends, which is another way to distribute knowledge outside
+          traditional “paywall only” spaces. :contentReference[oaicite:3]{index=3} In one of his public updates, he shared that DataExpert.io has taught
+          tens of thousands of free students through their free bootcamp and built a big library of hands-on materials. :contentReference[oaicite:4]{index=4}
+          Whether someone is switching careers, coming from a nontraditional background, or just doesn’t have a lot of guidance, that kind
+          of access can be a real difference-maker.
+        </p>
+
+        <h3>Why this connects to “Code &amp; Power”</h3>
+        <!-- #comments# Bullet points make grading rubrics easy to see -->
+        <ul>
+          <li>
+            <strong>Access as power:</strong> giving people high-quality learning resources can shift who gets to participate in technical fields.
+            :contentReference[oaicite:5]{index=5}
+          </li>
+          <li>
+            <strong>Reducing gatekeeping:</strong> public lectures/newsletters + structured cohorts make the “hidden curriculum” more visible.
+            :contentReference[oaicite:6]{index=6}
+          </li>
+          <li>
+            <strong>Limits still exist:</strong> education alone doesn’t fix hiring bias or workplace culture, but it can widen the on-ramp and help
+            people build confidence and skill to push back against exclusion.
+          </li>
+        </ul>
+
+        <h3>Links</h3>
+        <ul class="links">
+          <li>
+            <a href="https://www.dataexpert.io/about" target="_blank" rel="noreferrer">DataExpert.io — About Zach Wilson</a>
+            <span class="hint">— background + mission</span>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/DatawithZach" target="_blank" rel="noreferrer">Data with Zach (YouTube)</a>
+            <span class="hint">— free lectures + learning content</span>
+          </li>
+          <li>
+            <a href="https://blog.dataexpert.io/" target="_blank" rel="noreferrer">DataExpert.io Newsletter (Substack)</a>
+            <span class="hint">— ongoing resources about data/AI</span>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/eczachly" target="_blank" rel="noreferrer">LinkedIn profile</a>
+            <span class="hint">— work history + posts</span>
+          </li>
+        </ul>
+
+        <p class="tiny">
+          <!-- #comments# Reminder: add teammates + additional heroes if you're in a group -->
+          If I join a group, we’ll include a different tech hero for each member, as required by the project prompt.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
+      </footer>
+    </main>
+
+    <script>
+      // #comments# Tiny JS for year only
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

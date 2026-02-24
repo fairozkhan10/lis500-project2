@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Implicit Bias Resources — LIS 500 Project 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- #comments# Accessibility skip link -->
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <h1 class="site-title">Implicit Bias Resource Guide</h1>
+        <p class="site-subtitle">A first-year friendly intro to implicit bias, intersectionality, and the IBT.</p>
+
+        <!-- #comments# Shared navigation -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Welcome</a>
+          <a href="about.html">About Me</a>
+          <a href="ib-resources.html" aria-current="page">Implicit Bias Resources</a>
+          <a href="tech-hero.html">Tech Hero</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card">
+        <!-- #comments# Definitions in your own words -->
+        <h2>Key terms (in plain language)</h2>
+
+        <p><strong>Implicit bias</strong> is when we make quick associations or judgments without realizing it. It’s not always intentional, but it can still affect real decisions.</p>
+
+        <p><strong>Intersectionality</strong> is a way to understand how parts of identity (race, gender, class, etc.) overlap and shape someone’s experience with power and inequality.</p>
+
+        <p><strong>Implicit Bias Test (IBT/IAT)</strong> is an online test that measures how fast you associate certain ideas (like “good/bad” or jobs) with different social groups.</p>
+      </section>
+
+      <section class="card">
+        <!-- #comments# Critical reflection: not just links -->
+        <h2>How to interpret IBT results</h2>
+        <ul>
+          <li>The IBT can be useful for <strong>self-awareness</strong>, especially around snap judgments.</li>
+          <li>It shouldn’t be treated like a “personality score” or proof that someone is a “good/bad” person.</li>
+          <li>Results can be influenced by context (speed, fatigue, familiarity), so it’s better as a learning tool than a label.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <!-- #comments# Curated resources (subject guide style) -->
+        <h2>Starter resources</h2>
+        <ul class="links">
+          <li>
+            <a href="https://implicit.harvard.edu/implicit/selectatest.html" target="_blank" rel="noreferrer">Harvard Project Implicit — Take an Implicit Association Test</a>
+            <span class="hint">— The official site for the IBT/IAT.</span>
+          </li>
+          <li>
+            <a href="https://www.apa.org/topics/implicit-bias" target="_blank" rel="noreferrer">APA overview: Implicit bias</a>
+            <span class="hint">— A clear explanation of what implicit bias is and why it matters.</span>
+          </li>
+          <li>
+            <a href="https://www.rutgers.edu/news/what-implicit-bias" target="_blank" rel="noreferrer">Rutgers: What is implicit bias?</a>
+            <span class="hint">— Beginner-friendly breakdown + examples.</span>
+          </li>
+        </ul>
+
+        <p class="tiny">
+          <!-- #comments# You can add more links later, but keep the “why it matters” annotation -->
+          Tip: pick fewer links, but explain why each one is useful.
+        </p>
+      </section>
+
+      <section class="card">
+        <!-- #comments# Connect back to course (power + tech) -->
+        <h2>Why this matters in tech</h2>
+        <p>
+          Implicit bias becomes a “code &amp; power” issue when assumptions get baked into systems: who gets flagged, who gets ranked higher,
+          who gets trusted, or who gets ignored. Even small choices can scale when they’re automated.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
+      </footer>
+    </main>
+
+    <script>
+      // #comments# Tiny JS for year only
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

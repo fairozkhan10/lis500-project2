@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About Me — LIS 500 Project 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- #comments# Skip link for accessibility -->
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <h1 class="site-title">About Me</h1>
+        <p class="site-subtitle">Who I am + why I’m interested in code, power, and equity.</p>
+
+        <!-- #comments# Shared navigation -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Welcome</a>
+          <a href="about.html" aria-current="page">About Me</a>
+          <a href="ib-resources.html">Implicit Bias Resources</a>
+          <a href="tech-hero.html">Tech Hero</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card">
+        <!-- #comments# Replace with your Project 1 info -->
+        <h2>Quick intro</h2>
+        <p>
+          I’m <strong>Fairoz Khan</strong>, a student at UW–Madison. I’m interested in how technology influences people’s
+          opportunities and how “normal” product decisions can create unequal outcomes.
+        </p>
+
+        <!-- #comments# Add 1–2 personal interests that connect to the course -->
+        <p>
+          In this class, I’m especially focused on how bias can show up in systems that feel objective — like ranking,
+          recommendations, hiring tools, and automated decision-making.
+        </p>
+      </section>
+
+      <section class="card">
+        <!-- #comments# Course connection section -->
+        <h2>What I’m trying to learn</h2>
+        <ul>
+          <li>How intersectionality changes how we evaluate “fairness” in tech.</li>
+          <li>How implicit bias can shape decisions even when people have good intentions.</li>
+          <li>How to communicate these ideas clearly to people encountering them for the first time.</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <!-- #comments# Consistent footer -->
+        <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
+      </footer>
+    </main>
+
+    <script>
+      // #comments# Tiny JS for the year only
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

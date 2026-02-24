@@ -3,148 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>LIS 500: Code & Power — Project 2</title>
-    <meta
-      name="description"
-      content="LIS 500 Project 2: Code & Power — exploring the socio-technical dimensions of our digital world."
-    />
+    <title>LIS 500 — Project 2 (Code & Power)</title>
+    <meta name="description" content="LIS 500 Project 2: Code & Power." />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <!-- #comments# Skip link for accessibility -->
     <a class="skip" href="#main">Skip to content</a>
 
-    <!-- Top header + nav (matches your peers’ simple layout) -->
+    <!-- #comments# Simple header layout similar to peers -->
     <header class="site-header">
       <div class="wrap">
-        <h1 class="site-title">LIS 500: Code and Power</h1>
-        <p class="site-subtitle">Exploring the Socio-Technical Dimensions of Our Digital World</p>
+        <h1 class="site-title">LIS 500: Code &amp; Power</h1>
+        <p class="site-subtitle">Exploring how technology shapes (and is shaped by) power, identity, and inequality.</p>
 
-        <nav class="nav">
-          <a href="#welcome">Welcome</a>
-          <span class="sep">|</span>
-          <a href="#about">About Us</a>
-          <span class="sep">|</span>
-          <a href="#hero">Tech Hero</a>
-          <span class="sep">|</span>
-          <a href="#resources">Resource Guide</a>
+        <!-- #comments# Consistent nav across all pages -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html" aria-current="page">Welcome</a>
+          <a href="about.html">About Me</a>
+          <a href="ib-resources.html">Implicit Bias Resources</a>
+          <a href="tech-hero.html">Tech Hero</a>
         </nav>
       </div>
     </header>
 
     <main id="main" class="wrap">
-      <!-- Banner (keeps the “big image” feel without needing a real image yet) -->
-      <section class="banner" aria-label="Course banner">
+      <!-- #comments# Media-rich hero banner (replace image later if you want) -->
+      <section class="banner" aria-label="Banner">
         <div class="banner-inner">
-          <div class="banner-badge">LIS 500</div>
-          <div class="banner-text">
-            <div class="banner-head">CODE &amp; POWER</div>
-            <div class="banner-sub">Technology, equity, and critical perspectives</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WELCOME -->
-      <section id="welcome" class="card">
-        <h2>Welcome</h2>
-        <p>
-          This website is part of <strong>LIS 500: Code and Power</strong> at UW–Madison. Our goal is to
-          think critically about how technology intersects with race, identity, labor, and power — and
-          how “neutral” systems can still produce unequal outcomes.
-        </p>
-        <p>
-          Throughout this site, we connect course concepts (like intersectionality, bias, and visibility)
-          to real examples from tech and digital culture.
-        </p>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="card">
-        <h2>About Us</h2>
-
-        <!-- #comments# Project 2: keep teammate names visible on the page for credit -->
-        <p class="muted">
-          Created by:
-          <strong>Fairoz Khan</strong>,
-          <strong>Teammate Name 2</strong>,
-          <strong>Teammate Name 3</strong>
-          <span class="nowrap">| UW–Madison</span>
-        </p>
-
-        <p>
-          We’re focusing on how power shows up in everyday tech decisions — who gets represented, who
-          gets ignored, and who takes the risk when systems fail. We’re also paying attention to how
-          “diversity” is sometimes framed in a way that still leaves people out.
-        </p>
-
-        <div class="mini-grid">
-          <div class="mini">
-            <h3>What we’re analyzing</h3>
-            <p>
-              How platforms and institutions make people “legible” through data, categories, and
-              assumptions — and what happens when those assumptions don’t fit real lives.
-            </p>
-          </div>
-          <div class="mini">
-            <h3>Why intersectionality matters</h3>
-            <p>
-              It pushes us to look at overlapping identities (race, gender, class, etc.) instead of
-              treating inequality like a one-variable problem.
+          <div class="badge">PROJECT 2</div>
+          <div>
+            <h2 class="banner-title">A Discussion-Driven Web Resource</h2>
+            <p class="banner-text">
+              This site is built for LIS 500 and connects class ideas like intersectionality, implicit bias,
+              and “neutral” technology to real-world examples.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- TECH HERO -->
-      <section id="hero" class="card">
-        <h2>Tech Hero</h2>
-        <p class="muted">
-          <!-- #comments# Prompt warning: do NOT pick a big tech CEO. Choose someone tied to intersectionality + meaningful contribution -->
-          Not a CEO — someone who overcame adversity and made a meaningful contribution tied to equity and intersectionality.
-        </p>
-
-        <h3 class="tight">Who we chose</h3>
+      <section class="card">
+        <!-- #comments# First-year friendly framing -->
+        <h2>What this site is about</h2>
         <p>
-          <strong>[Name]</strong> — [Role / field].
+          The big takeaway from the first modules is that technology isn’t automatically objective. The way we design,
+          label, rank, and automate things can reinforce existing inequalities — even when no one “intends” harm.
         </p>
-
-        <h3 class="tight">Why they connect to “Code &amp; Power”</h3>
-        <ul></ul>
+        <p>
+          I’m using this site as a place to collect course ideas, share resources, and highlight people pushing for equity
+          in tech. The goal is to keep it readable for someone new to these topics (like a first-year student).
+        </p>
       </section>
 
-      <!-- RESOURCE GUIDE -->
-      <section id="resources" class="card">
-        <h2>Resource Guide</h2>
-        <p>
-          This section collects materials related to our topic (course concepts + outside sources).
-          We’re aiming for sources that support claims, add context, or offer a critique — not just filler links.
+      <section class="card">
+        <!-- #comments# Teammate names must be visible for credit -->
+        <h2>Team</h2>
+        <p class="muted">
+          Created by: <strong>Fairoz Khan</strong>
+          <!-- #comments# If you have teammates, add them here -->
         </p>
-
-        <ul class="links">
-          <li>
-            <a href="#" target="_blank" rel="noreferrer">[Course reading / lecture concept]</a>
-            <span class="hint">— </span>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noreferrer">[Credible article / report]</a>
-            <span class="hint">— </span>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noreferrer">[Example case / news story]</a>
-            <span class="hint">— </span>
-          </li>
-        </ul>
-
         <p class="tiny">
-          <!-- #comments# Replace # with real links and keep the “1-sentence why it matters” style -->
-          Tip: keep this short + specific. One strong link with a clear reason beats five random links.
+          Navigate using the menu above. Each page includes original writing, links, and design choices (no templates).
         </p>
       </section>
 
       <footer class="footer">
-        <p class="tiny">
-          © <span id="year"></span> LIS 500 — Project 2 • Built with HTML + CSS (no templates)
-        </p>
+        <!-- #comments# Footer stays consistent and simple -->
+        <p class="tiny">© <span id="year"></span> LIS 500 — Project 2 • HTML + CSS (no templates)</p>
       </footer>
     </main>
 
