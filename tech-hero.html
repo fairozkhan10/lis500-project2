@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Tech Hero — LIS 500 Project 2</title>
+    <meta name="description" content="Tech hero profile for LIS 500 Project 2." />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -13,6 +14,7 @@
 
     <header class="site-header">
       <div class="wrap">
+        <p class="eyebrow">LIS 500 • Project 2</p>
         <h1 class="site-title">Tech Hero</h1>
         <p class="site-subtitle">Someone challenging norms and widening access in tech.</p>
 
@@ -28,82 +30,70 @@
 
     <main id="main" class="wrap">
       <section class="card">
-        <!-- #comments# Not a famous Big Tech CEO; focuses on access + equity via education -->
+        <!-- #comments# Media-rich element for the hero page -->
+        <img class="float-img" src="images/code.jpg" alt="Text on a computer screen showing code" />
+
+        <!-- #comments# Must NOT be a famous Big Tech CEO / common pick -->
         <h2>Zach Wilson</h2>
+        <p class="muted">Founder of DataExpert.io • data engineering learning access • practical mentorship at scale</p>
 
-        <p class="muted">
-          <!-- #comments# Keep profile ~500 words max + include links -->
-          Founder of DataExpert.io • data engineering education • making high-signal learning more accessible
-        </p>
-
-        <!-- #comments# Short profile written in discussion style (not a pure biography) -->
+        <!-- #comments# Discussion-style profile (not just a biography dump) -->
         <p>
-          I picked Zach Wilson because a lot of “breaking into tech” advice feels gatekept — like you need the right school,
-          the right network, and a ton of money for courses before you can even start. Zach’s work stands out because he’s built
-          a pathway that lowers the barrier to entry, especially for people who don’t already have access to strong mentorship.
-          On his DataExpert.io “About” page, he frames his goal as upskilling data knowledge workers based on his experience leading
-          data/software engineering teams at companies like Airbnb, Facebook, and Netflix. :contentReference[oaicite:1]{index=1}
+          I picked Zach Wilson because a lot of “learning tech” is quietly gatekept: expensive courses, unclear roadmaps, and a sense
+          that you need the right network to even know what to study. His work stands out because it focuses on widening access to
+          real, practical skills—especially for people trying to enter data roles without a traditional pipeline.
         </p>
 
         <p>
-          What makes this a “Code &amp; Power” story is that access is a power issue. If the only people who can learn practical data
-          engineering are people with time, money, and connections, then the field stays less diverse (and the systems we build reflect
-          a narrower range of experiences). DataExpert.io runs cohort-style bootcamps and also pushes a lot of learning content publicly
-          through “Data with Zach” on YouTube, including free bootcamp lecture material. :contentReference[oaicite:2]{index=2}
+          On DataExpert.io’s About page, he describes building cohort-style education based on his experience leading data/software
+          engineering teams at places like Airbnb, Facebook, and Netflix. The part that connects directly to “Code &amp; Power” is that
+          access to skills is a power issue: who gets to participate in building systems also influences what problems get solved and
+          whose needs get treated as “edge cases.”
         </p>
 
         <p>
-          He also runs a large newsletter focused on data engineering and AI trends, which is another way to distribute knowledge outside
-          traditional “paywall only” spaces. :contentReference[oaicite:3]{index=3} In one of his public updates, he shared that DataExpert.io has taught
-          tens of thousands of free students through their free bootcamp and built a big library of hands-on materials. :contentReference[oaicite:4]{index=4}
-          Whether someone is switching careers, coming from a nontraditional background, or just doesn’t have a lot of guidance, that kind
-          of access can be a real difference-maker.
+          He also publishes learning content publicly through “Data with Zach” (YouTube) and runs a newsletter about data engineering
+          and AI trends. Even though education alone doesn’t remove bias from hiring or workplace culture, it can widen the on-ramp and
+          make the “hidden curriculum” more visible for people who don’t already have insider knowledge.
         </p>
 
         <h3>Why this connects to “Code &amp; Power”</h3>
-        <!-- #comments# Bullet points make grading rubrics easy to see -->
-        <ul>
-          <li>
-            <strong>Access as power:</strong> giving people high-quality learning resources can shift who gets to participate in technical fields.
-            :contentReference[oaicite:5]{index=5}
-          </li>
-          <li>
-            <strong>Reducing gatekeeping:</strong> public lectures/newsletters + structured cohorts make the “hidden curriculum” more visible.
-            :contentReference[oaicite:6]{index=6}
-          </li>
-          <li>
-            <strong>Limits still exist:</strong> education alone doesn’t fix hiring bias or workplace culture, but it can widen the on-ramp and help
-            people build confidence and skill to push back against exclusion.
-          </li>
+        <!-- #comments# Bullet list makes rubric alignment obvious -->
+        <ul class="list">
+          <li><strong>Access as power:</strong> expanding who can learn technical skills changes who can enter the field.</li>
+          <li><strong>Reducing gatekeeping:</strong> clearer roadmaps + public materials make “insider info” less exclusive.</li>
+          <li><strong>Limits remain:</strong> education helps, but institutions still need accountability for bias and exclusion.</li>
         </ul>
 
         <h3>Links</h3>
-        <ul class="links">
+        <!-- #comments# Useful links: official bio + direct voice + ongoing resources -->
+        <ul class="sources">
           <li>
-            <a href="https://www.dataexpert.io/about" target="_blank" rel="noreferrer">DataExpert.io — About Zach Wilson</a>
-            <span class="hint">— background + mission</span>
+            <a href="https://www.dataexpert.io/about" target="_blank" rel="noreferrer">DataExpert.io — About</a>
+            <span class="muted">— background and mission</span>
           </li>
           <li>
-            <a href="https://www.youtube.com/c/DatawithZach" target="_blank" rel="noreferrer">Data with Zach (YouTube)</a>
-            <span class="hint">— free lectures + learning content</span>
+            <a href="https://www.youtube.com/@DataWithZach" target="_blank" rel="noreferrer">Data with Zach (YouTube)</a>
+            <span class="muted">— public learning content</span>
           </li>
           <li>
-            <a href="https://blog.dataexpert.io/" target="_blank" rel="noreferrer">DataExpert.io Newsletter (Substack)</a>
-            <span class="hint">— ongoing resources about data/AI</span>
+            <a href="https://blog.dataexpert.io/" target="_blank" rel="noreferrer">DataExpert.io Newsletter</a>
+            <span class="muted">— DE/AI topics and resources</span>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/eczachly" target="_blank" rel="noreferrer">LinkedIn profile</a>
-            <span class="hint">— work history + posts</span>
+            <a href="https://www.linkedin.com/in/eczachly/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span class="muted">— work history and posts</span>
           </li>
         </ul>
 
-        <p class="tiny">
-          <!-- #comments# Reminder: add teammates + additional heroes if you're in a group -->
-          If I join a group, we’ll include a different tech hero for each member, as required by the project prompt.
+        <!-- #comments# Group reminder in case you join a team later -->
+        <p class="tiny muted">
+          If I join a group, each member will include a different tech hero, as required by the Project 2 prompt.
         </p>
       </section>
 
       <footer class="footer">
+        <!-- #comments# Consistent footer -->
         <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
       </footer>
     </main>

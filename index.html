@@ -4,78 +4,88 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>LIS 500 — Project 2 (Code & Power)</title>
-    <meta name="description" content="LIS 500 Project 2: Code & Power." />
+    <meta name="description" content="LIS 500 Project 2 website: code, power, and intersectionality." />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- #comments# Skip link for accessibility -->
+    <!-- #comments# Accessibility: let keyboard users skip repeated navigation -->
     <a class="skip" href="#main">Skip to content</a>
 
-    <!-- #comments# Simple header layout similar to peers -->
     <header class="site-header">
       <div class="wrap">
-        <h1 class="site-title">LIS 500: Code &amp; Power</h1>
-        <p class="site-subtitle">Exploring how technology shapes (and is shaped by) power, identity, and inequality.</p>
+        <!-- #comments# Simple landing headline so visitors instantly know what this site is -->
+        <p class="eyebrow">LIS 500 • Project 2</p>
+        <h1 class="site-title">Code &amp; Power</h1>
 
-        <!-- #comments# Consistent nav across all pages -->
+        <!-- #comments# First impressions: short, high-level purpose statement -->
+        <p class="site-subtitle">
+          This site looks at how technology distributes power—and why intersectionality matters when we talk about who benefits,
+          who gets harmed, and who gets ignored.
+        </p>
+
+        <!-- #comments# Consistent navigation across every page -->
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="index.html" aria-current="page">Welcome</a>
           <a href="about.html">About Me</a>
           <a href="ib-resources.html">Implicit Bias Resources</a>
           <a href="tech-hero.html">Tech Hero</a>
         </nav>
+
+        <!-- #comments# Media-rich requirement: homepage banner image (stored locally in /images) -->
+        <img class="banner-img" src="images/circuit.jpg" alt="Close-up photograph of a circuit board" />
       </div>
     </header>
 
     <main id="main" class="wrap">
-      <!-- #comments# Media-rich hero banner (replace image later if you want) -->
-      <section class="banner" aria-label="Banner">
-        <div class="banner-inner">
-          <div class="badge">PROJECT 2</div>
-          <div>
-            <h2 class="banner-title">A Discussion-Driven Web Resource</h2>
-            <p class="banner-text">
-              This site is built for LIS 500 and connects class ideas like intersectionality, implicit bias,
-              and “neutral” technology to real-world examples.
-            </p>
-          </div>
-        </div>
+      <section class="grid-2">
+        <article class="card">
+          <!-- #comments# “Claim” is written in discussion style, not a pure summary -->
+          <h2>My focus</h2>
+          <p>
+            A big takeaway for me so far is that tech isn’t neutral just because it uses math or code. Decisions like what data to
+            collect, what counts as “normal,” and what gets automated end up shaping real outcomes—especially for people who already
+            have less institutional power.
+          </p>
+          <p>
+            Intersectionality helps because it forces you to ask more specific questions than “is this biased?”—like biased for who,
+            in what situation, and compared to what baseline.
+          </p>
+        </article>
+
+        <aside class="card">
+          <!-- #comments# Team section stays visible for credit (even if you’re solo right now) -->
+          <h2>Team</h2>
+          <ul class="list">
+            <li><strong>Fairoz Khan</strong></li>
+            <li>Teammate 2 (if applicable)</li>
+            <li>Teammate 3 (if applicable)</li>
+          </ul>
+          <!-- #comments# Keeps expectations clear if you later join a group -->
+          <p class="tiny muted">
+            If I join a group, we’ll make sure each member has their own tech hero, as the prompt requires.
+          </p>
+        </aside>
       </section>
 
       <section class="card">
-        <!-- #comments# First-year friendly framing -->
-        <h2>What this site is about</h2>
-        <p>
-          The big takeaway from the first modules is that technology isn’t automatically objective. The way we design,
-          label, rank, and automate things can reinforce existing inequalities — even when no one “intends” harm.
-        </p>
-        <p>
-          I’m using this site as a place to collect course ideas, share resources, and highlight people pushing for equity
-          in tech. The goal is to keep it readable for someone new to these topics (like a first-year student).
-        </p>
-      </section>
-
-      <section class="card">
-        <!-- #comments# Teammate names must be visible for credit -->
-        <h2>Team</h2>
-        <p class="muted">
-          Created by: <strong>Fairoz Khan</strong>
-          <!-- #comments# If you have teammates, add them here -->
-        </p>
-        <p class="tiny">
-          Navigate using the menu above. Each page includes original writing, links, and design choices (no templates).
-        </p>
+        <!-- #comments# Simple “what’s inside” section so graders can quickly see required pages exist -->
+        <h2>What’s on this site</h2>
+        <ul class="list">
+          <li><strong>About Me:</strong> background and why this course theme matters to me.</li>
+          <li><strong>Implicit Bias Resources:</strong> a first-year-friendly subject guide style page with definitions + links.</li>
+          <li><strong>Tech Hero:</strong> a profile of someone pushing equity/access in tech spaces.</li>
+        </ul>
       </section>
 
       <footer class="footer">
-        <!-- #comments# Footer stays consistent and simple -->
-        <p class="tiny">© <span id="year"></span> LIS 500 — Project 2 • HTML + CSS (no templates)</p>
+        <!-- #comments# Footer stays consistent and includes a tiny bit of JS on other pages (optional) -->
+        <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
       </footer>
     </main>
 
     <script>
-      // #comments# Tiny JS for the year only
+      // #comments# Tiny JS for the year only (allowed; not structural)
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>

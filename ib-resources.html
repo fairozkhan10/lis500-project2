@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Implicit Bias Resources — LIS 500 Project 2</title>
+    <meta name="description" content="Library subject guide style resources on implicit bias and intersectionality." />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -13,8 +14,9 @@
 
     <header class="site-header">
       <div class="wrap">
-        <h1 class="site-title">Implicit Bias Resource Guide</h1>
-        <p class="site-subtitle">A first-year friendly intro to implicit bias, intersectionality, and the IBT.</p>
+        <p class="eyebrow">LIS 500 • Project 2</p>
+        <h1 class="site-title">Implicit Bias Resources</h1>
+        <p class="site-subtitle">A mini subject-guide page for first-year students (definitions + links + why it matters).</p>
 
         <!-- #comments# Shared navigation -->
         <nav class="site-nav" aria-label="Primary navigation">
@@ -28,60 +30,78 @@
 
     <main id="main" class="wrap">
       <section class="card">
-        <!-- #comments# Definitions in your own words -->
-        <h2>Key terms (in plain language)</h2>
+        <!-- #comments# Media-rich: integrates an image floated inside content -->
+        <img class="float-img" src="images/network.jpg" alt="Abstract network of connected nodes" />
 
-        <p><strong>Implicit bias</strong> is when we make quick associations or judgments without realizing it. It’s not always intentional, but it can still affect real decisions.</p>
+        <!-- #comments# Definitions in your own words (first-year friendly) -->
+        <h2>Quick definitions (plain language)</h2>
+        <p>
+          <strong>Implicit bias</strong> is when your brain makes quick associations automatically—sometimes without you realizing it.
+          That doesn’t automatically make someone “bad,” but it can still shape decisions (like who seems “qualified” or “trustworthy”)
+          if nobody stops to question it.
+        </p>
+        <p>
+          <strong>Intersectionality</strong> is a way to understand how parts of identity (race, gender, class, disability, etc.)
+          overlap and change someone’s experience. Instead of treating each category separately, it asks how systems affect people who
+          sit at multiple intersections at the same time.
+        </p>
 
-        <p><strong>Intersectionality</strong> is a way to understand how parts of identity (race, gender, class, etc.) overlap and shape someone’s experience with power and inequality.</p>
-
-        <p><strong>Implicit Bias Test (IBT/IAT)</strong> is an online test that measures how fast you associate certain ideas (like “good/bad” or jobs) with different social groups.</p>
-      </section>
-
-      <section class="card">
         <!-- #comments# Critical reflection: not just links -->
-        <h2>How to interpret IBT results</h2>
-        <ul>
-          <li>The IBT can be useful for <strong>self-awareness</strong>, especially around snap judgments.</li>
-          <li>It shouldn’t be treated like a “personality score” or proof that someone is a “good/bad” person.</li>
-          <li>Results can be influenced by context (speed, fatigue, familiarity), so it’s better as a learning tool than a label.</li>
-        </ul>
+        <h3>Why this matters in tech</h3>
+        <p>
+          Tech systems often turn human judgments into “rules” (models, policies, ranking systems). If the inputs or assumptions already
+          reflect unequal treatment, the system can scale that inequality fast. That’s why it’s important to slow down, test impact across
+          groups, and create real ways for people to challenge decisions.
+        </p>
       </section>
 
       <section class="card">
-        <!-- #comments# Curated resources (subject guide style) -->
-        <h2>Starter resources</h2>
-        <ul class="links">
+        <!-- #comments# Curated resources (subject guide style) with short annotations -->
+        <h2>Resources (with short annotations)</h2>
+        <ul class="sources">
           <li>
-            <a href="https://implicit.harvard.edu/implicit/selectatest.html" target="_blank" rel="noreferrer">Harvard Project Implicit — Take an Implicit Association Test</a>
-            <span class="hint">— The official site for the IBT/IAT.</span>
+            <a href="https://implicit.harvard.edu/implicit/selectatest.html" target="_blank" rel="noreferrer">
+              Harvard Project Implicit (IAT tests)
+            </a>
+            <span class="muted">— lets you experience how quick associations can show up even when you don’t “mean” them.</span>
           </li>
           <li>
-            <a href="https://www.apa.org/topics/implicit-bias" target="_blank" rel="noreferrer">APA overview: Implicit bias</a>
-            <span class="hint">— A clear explanation of what implicit bias is and why it matters.</span>
+            <a href="https://www.apa.org/topics/racism-bias-discrimination/types-stress" target="_blank" rel="noreferrer">
+              APA: bias, discrimination, and stress
+            </a>
+            <span class="muted">— background context on how bias shows up and affects people over time.</span>
           </li>
           <li>
-            <a href="https://www.rutgers.edu/news/what-implicit-bias" target="_blank" rel="noreferrer">Rutgers: What is implicit bias?</a>
-            <span class="hint">— Beginner-friendly breakdown + examples.</span>
+            <a href="https://www.npr.org/sections/codeswitch/" target="_blank" rel="noreferrer">
+              NPR Code Switch (race & culture reporting)
+            </a>
+            <span class="muted">— examples of how social narratives + institutions shape everyday outcomes.</span>
+          </li>
+          <li>
+            <a href="https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics/implicit-bias" target="_blank" rel="noreferrer">
+              Implicit bias overview (ADA example from health context)
+            </a>
+            <span class="muted">— shows how “snap judgments” can affect real decisions in professional settings.</span>
           </li>
         </ul>
 
+        <!-- #comments# Encourages first-year students to think critically, not just click links -->
         <p class="tiny">
-          <!-- #comments# You can add more links later, but keep the “why it matters” annotation -->
-          Tip: pick fewer links, but explain why each one is useful.
+          Tip: When you read a resource, ask “who benefits, who is harmed, and what assumptions are treated as normal?”
         </p>
       </section>
 
       <section class="card">
         <!-- #comments# Connect back to course (power + tech) -->
-        <h2>Why this matters in tech</h2>
+        <h2>Connection back to Code &amp; Power</h2>
         <p>
-          Implicit bias becomes a “code &amp; power” issue when assumptions get baked into systems: who gets flagged, who gets ranked higher,
-          who gets trusted, or who gets ignored. Even small choices can scale when they’re automated.
+          A big theme in this course is that technology is shaped by social power—not separate from it. Implicit bias and
+          intersectionality are useful lenses because they help us see how “neutral” tools can still reproduce unequal outcomes.
         </p>
       </section>
 
       <footer class="footer">
+        <!-- #comments# Consistent footer -->
         <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
       </footer>
     </main>

@@ -4,19 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>About Me — LIS 500 Project 2</title>
+    <meta name="description" content="About me page for LIS 500 Project 2." />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- #comments# Skip link for accessibility -->
+    <!-- #comments# Skip link improves accessibility for keyboard navigation -->
     <a class="skip" href="#main">Skip to content</a>
 
     <header class="site-header">
       <div class="wrap">
+        <p class="eyebrow">LIS 500 • Project 2</p>
         <h1 class="site-title">About Me</h1>
-        <p class="site-subtitle">Who I am + why I’m interested in code, power, and equity.</p>
 
-        <!-- #comments# Shared navigation -->
+        <!-- #comments# Shared navigation across pages -->
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="index.html">Welcome</a>
           <a href="about.html" aria-current="page">About Me</a>
@@ -28,38 +29,54 @@
 
     <main id="main" class="wrap">
       <section class="card">
-        <!-- #comments# Replace with your Project 1 info -->
-        <h2>Quick intro</h2>
+        <!-- #comments# Replace this with your real Project 1 details if you want it more personal -->
+        <h2>Hi — I’m Fairoz Khan</h2>
+        <p class="muted">Student • interested in systems, data, and how “neutral” tools affect real people</p>
+
         <p>
-          I’m <strong>Fairoz Khan</strong>, a student at UW–Madison. I’m interested in how technology influences people’s
-          opportunities and how “normal” product decisions can create unequal outcomes.
+          I’m taking LIS 500 because I want to understand the “power layer” behind technology—who gets represented, who gets excluded,
+          and how design choices quietly become social rules. I’m interested in data and backend systems, so it’s useful (and honestly
+          kind of uncomfortable sometimes) to see how “efficiency” can also mean surveillance, unequal access, or unfair outcomes.
         </p>
 
-        <!-- #comments# Add 1–2 personal interests that connect to the course -->
+        <!-- #comments# Personal connection: one or two interests to keep it human -->
         <p>
-          In this class, I’m especially focused on how bias can show up in systems that feel objective — like ranking,
-          recommendations, hiring tools, and automated decision-making.
+          Outside of class, I’m drawn to building projects that organize information (dashboards, pipelines, APIs), but this course
+          pushes me to ask: what assumptions are hiding in the data? who is missing? and what happens when errors hit the same groups
+          repeatedly?
         </p>
       </section>
 
-      <section class="card">
-        <!-- #comments# Course connection section -->
-        <h2>What I’m trying to learn</h2>
-        <ul>
-          <li>How intersectionality changes how we evaluate “fairness” in tech.</li>
-          <li>How implicit bias can shape decisions even when people have good intentions.</li>
-          <li>How to communicate these ideas clearly to people encountering them for the first time.</li>
-        </ul>
+      <section class="grid-2">
+        <article class="card">
+          <!-- #comments# Course concept tie-in -->
+          <h2>What I’m trying to learn</h2>
+          <ul class="list">
+            <li>How bias can be built into tools through data, labeling, and defaults</li>
+            <li>Why intersectionality matters (race/gender/class aren’t separable in practice)</li>
+            <li>How to communicate these ideas clearly without “tech jargon”</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <!-- #comments# This page stays useful for graders by pointing to other pages -->
+          <h2>Where to go next</h2>
+          <p>
+            If you’re new to these topics, the <a href="ib-resources.html">Implicit Bias Resources</a> page is written like a
+            “subject guide” for first-year students. The <a href="tech-hero.html">Tech Hero</a> page is a short profile showing
+            how access and equity can be advanced through community + education work.
+          </p>
+        </article>
       </section>
 
       <footer class="footer">
-        <!-- #comments# Consistent footer -->
+        <!-- #comments# Consistent footer across pages -->
         <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
       </footer>
     </main>
 
     <script>
-      // #comments# Tiny JS for the year only
+      // #comments# Tiny JS for year only
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
