@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tech Hero — LIS 500 Project 2</title>
+    <meta name="description" content="Tech hero profile for LIS 500 Project 2." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <p class="eyebrow">LIS 500 • Project 2</p>
+        <h1 class="site-title">Tech Hero</h1>
+        <p class="site-subtitle">Someone challenging norms and widening access in tech spaces.</p>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Welcome</a>
+          <a href="about.html">About Me</a>
+          <a href="ib-resources.html">Implicit Bias Resources</a>
+          <a href="tech-hero.html" aria-current="page">Tech Hero</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card">
+        <img class="float-img" src="images/code.jpg" alt="Text on a computer screen showing code" />
+
+        <h2>Mimi Ọnụọha</h2>
+        <p class="muted">Writer / researcher • data + power • “missing datasets” as a way to see who gets ignored</p>
+
+        <p>
+          I picked Mimi Ọnụọha because she flips a common “data mindset” upside down. Instead of only asking what a system measures,
+          she asks what it <em>doesn’t</em> measure—and who pays the price for those blanks. In a course about Code &amp; Power, that
+          feels like a practical way to spot how inequality becomes invisible.
+        </p>
+
+        <p>
+          In her work on “missing datasets,” she describes blank spots in otherwise data-saturated spaces: areas where data
+          <em>should</em> exist but doesn’t, and where that absence often correlates with vulnerability and unequal power.
+          That lens connects directly to intersectionality: the people most likely to be missing from datasets are often those at
+          multiple intersections (race/gender/class/disability/immigration status), where harms stack but documentation is weakest.
+        </p>
+
+        <h3>Why this connects to “Code &amp; Power”</h3>
+        <ul class="list">
+          <li><strong>Absence is political:</strong> what isn’t tracked can reveal whose suffering is “not legible” to institutions.</li>
+          <li><strong>Intersectional harms:</strong> “one-size-fits-all” data hides compounded experiences across identities.</li>
+          <li><strong>Accountability:</strong> a “neutral” model can’t be fair if the problem space is missing whole groups or outcomes.</li>
+        </ul>
+
+        <h3>Links</h3>
+        <ul class="sources">
+          <li>
+            <a href="https://github.com/MimiOnuoha/missing-datasets" target="_blank" rel="noopener noreferrer">
+              On Missing Datasets (repo + essay)
+            </a>
+            <span class="muted">— definition + examples of how missingness tracks power</span>
+          </li>
+          <li>
+            <a href="https://bitforms.art/projects/the-library-of-missing-datasets-v3/" target="_blank" rel="noopener noreferrer">
+              The Library of Missing Datasets (project)
+            </a>
+            <span class="muted">— the concept as a public-facing “library” experience</span>
+          </li>
+        </ul>
+
+        <a class="backtotop" href="#main">Back to top ↑</a>
+      </section>
+
+      <footer class="footer">
+        <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

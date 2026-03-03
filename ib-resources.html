@@ -9,16 +9,14 @@
   </head>
 
   <body>
-    <!-- #comments# Accessibility skip link -->
     <a class="skip" href="#main">Skip to content</a>
 
     <header class="site-header">
       <div class="wrap">
         <p class="eyebrow">LIS 500 • Project 2</p>
         <h1 class="site-title">Implicit Bias Resources</h1>
-        <p class="site-subtitle">A mini subject-guide page for first-year students (definitions + links + why it matters).</p>
+        <p class="site-subtitle">A mini subject-guide page: definitions + curated links + how to use them (not just “what they are”).</p>
 
-        <!-- #comments# Shared navigation -->
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="index.html">Welcome</a>
           <a href="about.html">About Me</a>
@@ -30,84 +28,123 @@
 
     <main id="main" class="wrap">
       <section class="card">
-        <!-- #comments# Media-rich: integrates an image floated inside content -->
         <img class="float-img" src="images/network.jpg" alt="Abstract network of connected nodes" />
 
-        <!-- #comments# Definitions in your own words (first-year friendly) -->
         <h2>Quick definitions (plain language)</h2>
         <p>
-          <strong>Implicit bias</strong> is when your brain makes quick associations automatically—sometimes without you realizing it.
-          That doesn’t automatically make someone “bad,” but it can still shape decisions (like who seems “qualified” or “trustworthy”)
-          if nobody stops to question it.
+          <strong>Implicit bias</strong> is when your brain makes quick associations automatically. The risk isn’t just “bad attitudes”—
+          it’s when fast assumptions quietly shape decisions (hiring, policing, grading, health care, moderation, etc.).
         </p>
         <p>
-          <strong>Intersectionality</strong> is a way to understand how parts of identity (race, gender, class, disability, etc.)
-          overlap and change someone’s experience. Instead of treating each category separately, it asks how systems affect people who
-          sit at multiple intersections at the same time.
+          <strong>Intersectionality</strong> helps explain why “bias” isn’t the same for everyone. People experience systems differently
+          at overlapping identities (race/gender/class/disability, etc.), so checking only one category can hide real harm.
         </p>
 
-        <!-- #comments# Critical reflection: not just links -->
-        <h3>Why this matters in tech</h3>
-        <p>
-          Tech systems often turn human judgments into “rules” (models, policies, ranking systems). If the inputs or assumptions already
-          reflect unequal treatment, the system can scale that inequality fast. That’s why it’s important to slow down, test impact across
-          groups, and create real ways for people to challenge decisions.
+        <div class="callout">
+          <h3 class="callout-title">How to use this page</h3>
+          <ol class="list">
+            <li>Pick a “path” below (student / educator / technologist).</li>
+            <li>Use the checklist to evaluate a tool or policy (not just read definitions).</li>
+            <li>Bring one concrete example back to your other pages (so the site feels connected).</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Pick your path (interactive)</h2>
+
+        <details>
+          <summary>Path A — If you’re a student (10–15 minutes)</summary>
+          <div class="details-body">
+            <ul class="sources">
+              <li>
+                <a href="https://implicit.harvard.edu/implicit/selectatest.html" target="_blank" rel="noopener noreferrer">
+                  Project Implicit: take an IAT
+                </a>
+                <span class="muted">— do it once, then write 3 sentences on what surprised you.</span>
+              </li>
+              <li>
+                <a href="https://www.apa.org/topics/implicit-bias" target="_blank" rel="noopener noreferrer">
+                  APA: overview of implicit bias
+                </a>
+                <span class="muted">— a grounded explanation of what it is (and what it isn’t).</span>
+              </li>
+            </ul>
+            <p class="tiny muted">
+              Use case idea: connect your result to one tech system you’ve used (recommendations, search, ads, grading, etc.).
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Path B — If you’re teaching / leading a group</summary>
+          <div class="details-body">
+            <ul class="sources">
+              <li>
+                <a href="https://www.apa.org/topics/implicit-bias" target="_blank" rel="noopener noreferrer">
+                  APA: implicit bias resources
+                </a>
+                <span class="muted">— language you can use without shaming people.</span>
+              </li>
+              <li>
+                <a href="https://www.npr.org/sections/codeswitch/" target="_blank" rel="noopener noreferrer">
+                  NPR Code Switch
+                </a>
+                <span class="muted">— real stories that show how “systems” hit people differently.</span>
+              </li>
+            </ul>
+            <p class="tiny muted">
+              Try: have your group identify one “default” in a tool (who it assumes, who it ignores).
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Path C — If you’re building a tech system (product / data / ML)</summary>
+          <div class="details-body">
+            <p class="muted">
+              The goal isn’t perfect neutrality—it’s checking impact, documenting assumptions, and creating ways to challenge outcomes.
+            </p>
+            <ul class="list">
+              <li>Ask what’s missing from your dataset (who/what outcomes aren’t recorded).</li>
+              <li>Test across groups (don’t only report one overall accuracy metric).</li>
+              <li>Document decisions: what you optimized for, and what you chose not to.</li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <section class="card">
+        <h2>Bias Check Toolkit (copy/paste checklist)</h2>
+        <p class="muted">Use this when evaluating an app, policy, model, or “neutral” workflow.</p>
+
+        <div class="checklist">
+          <label><input type="checkbox" /> Who is the “default user” assumed by the design?</label>
+          <label><input type="checkbox" /> What outcomes are measured — and what harms are not measured?</label>
+          <label><input type="checkbox" /> What groups are missing or undercounted in the data?</label>
+          <label><input type="checkbox" /> Can people contest decisions (appeals, explanations, human review)?</label>
+          <label><input type="checkbox" /> Does it work differently at intersections (not just one category at a time)?</label>
+        </div>
+
+        <p class="tiny muted">
+          If you check 2+ items, that’s not “failure”—it’s a sign your system needs documentation, testing, and accountability routes.
         </p>
       </section>
 
       <section class="card">
-        <!-- #comments# Curated resources (subject guide style) with short annotations -->
-        <h2>Resources (with short annotations)</h2>
-        <ul class="sources">
-          <li>
-            <a href="https://implicit.harvard.edu/implicit/selectatest.html" target="_blank" rel="noreferrer">
-              Harvard Project Implicit (IAT tests)
-            </a>
-            <span class="muted">— lets you experience how quick associations can show up even when you don’t “mean” them.</span>
-          </li>
-          <li>
-            <a href="https://www.apa.org/topics/racism-bias-discrimination/types-stress" target="_blank" rel="noreferrer">
-              APA: bias, discrimination, and stress
-            </a>
-            <span class="muted">— background context on how bias shows up and affects people over time.</span>
-          </li>
-          <li>
-            <a href="https://www.npr.org/sections/codeswitch/" target="_blank" rel="noreferrer">
-              NPR Code Switch (race & culture reporting)
-            </a>
-            <span class="muted">— examples of how social narratives + institutions shape everyday outcomes.</span>
-          </li>
-          <li>
-            <a href="https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics/implicit-bias" target="_blank" rel="noreferrer">
-              Implicit bias overview (ADA example from health context)
-            </a>
-            <span class="muted">— shows how “snap judgments” can affect real decisions in professional settings.</span>
-          </li>
-        </ul>
-
-        <!-- #comments# Encourages first-year students to think critically, not just click links -->
-        <p class="tiny">
-          Tip: When you read a resource, ask “who benefits, who is harmed, and what assumptions are treated as normal?”
-        </p>
-      </section>
-
-      <section class="card">
-        <!-- #comments# Connect back to course (power + tech) -->
         <h2>Connection back to Code &amp; Power</h2>
         <p>
-          A big theme in this course is that technology is shaped by social power—not separate from it. Implicit bias and
-          intersectionality are useful lenses because they help us see how “neutral” tools can still reproduce unequal outcomes.
+          A theme in this course is that tech encodes social power: it scales decisions, normalizes assumptions, and can make inequality
+          look like “just the output.” Intersectionality matters because harm often compounds, and one-axis thinking can hide it.
         </p>
       </section>
 
       <footer class="footer">
-        <!-- #comments# Consistent footer -->
         <p class="tiny">© <span id="year"></span> LIS 500 — Project 2</p>
       </footer>
     </main>
 
     <script>
-      // #comments# Tiny JS for year only
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>

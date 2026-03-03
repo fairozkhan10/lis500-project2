@@ -177,3 +177,76 @@ body{
 @media (min-width: 820px){
   .grid-2{ grid-template-columns: 1.1fr .9fr; }
 }
+
+/* ===== Project 2 final polish: accessibility + interactive elements ===== */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible{
+  outline: 3px solid rgba(255,255,255,.75);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce){
+  html { scroll-behavior: auto; }
+}
+
+/* Callout block */
+.callout{
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.05);
+}
+.callout-title{ margin: 0 0 8px; }
+
+/* Details accordion styling (interactive, no JS) */
+details{
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,.04);
+  margin-top: 12px;
+}
+summary{
+  cursor: pointer;
+  font-weight: 650;
+}
+.details-body{
+  margin-top: 10px;
+}
+
+/* Checklist */
+.checklist{
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+.checklist label{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,.03);
+}
+.checklist input{ margin-top: 3px; }
+
+/* Back-to-top */
+.backtotop{
+  display:inline-block;
+  margin-top: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  text-decoration: none;
+}
+.backtotop:hover{ background: rgba(255,255,255,.10); }
+
